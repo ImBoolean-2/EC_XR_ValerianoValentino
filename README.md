@@ -212,6 +212,21 @@ Guion sugerido para el video:
 > escritorio → activar **OpenXR**, añadir el *Interaction Profile* del visor y **quitar** el
 > `XR Device Simulator` de la escena.
 
+### Nota sobre un aviso de consola (esperado y benigno)
+
+Al ejecutar en el Editor puede aparecer:
+
+```
+Failed to get haptic capabilities of XRSimulatedController ... error code -1.
+Continuing assuming a single haptic channel.
+```
+
+Es un aviso **informativo** del XR Interaction Toolkit: los mandos simulados no implementan la
+consulta de capacidades hápticas, y el propio mensaje indica que XRI continúa con un canal por
+defecto. No afecta a ninguna funcionalidad. El script `Assets/Scripts/SupresorAvisoHaptica.cs`
+lo filtra en el Editor para mantener la consola limpia; en un dispositivo real con mandos
+físicos no aparece.
+
 ---
 
 ## 8. Cómo abrir el proyecto

@@ -355,6 +355,17 @@
                 },
                 {
                     "name": "",
+                    "id": "84c8cc58-2ddb-4450-9ed8-349b16e85496",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Manipulate Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b2c1b1cd-6ea7-45b6-b68f-17b3662b4d3a",
                     "path": "<Mouse>/delta",
                     "interactions": "",
