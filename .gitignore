@@ -1,0 +1,67 @@
+# ============================================================
+# Unity — .gitignore estándar (Unity 6 / Asset Store template)
+# ============================================================
+
+# Carpetas generadas por Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Asset meta data debe versionarse, pero solo el .meta
+/[Aa]ssets/AssetStoreTools*
+
+# Gráficos / IL2CPP
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Compilación de Unity
+sysinfo.txt
+*.apk
+*.aab
+*.unitypackage
+*.app
+crashlytics-build.properties
+
+# Builds
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editores
+.vs/
+.idea/
+.vscode/
+.consulo/
+*.csproj.user
+*.userprefs
+*.swp
+*~
+
+# Archivos de solución generados por IDEs (esta entrega)
+*.slnx
+.vsconfig
+
+# Metafiles de carpetas de usuario
+# (los .meta dentro de Assets SÍ se versionan)
