@@ -95,20 +95,28 @@ Sala de entrenamiento (10 x 10 unidades)
 
 | Acción | Tecla / Ratón |
 |---|---|
-| Mover la cabeza (HMD) | Clic derecho + ratón |
+| **Caminar (mueve cámara y manos juntas)** | **`W` `A` `S` `D`** |
+| Girar la cabeza (mirar alrededor) | **Clic derecho** + mover el ratón |
 | Cambiar de dispositivo (izq./der./HMD) | `Tab` |
-| Activar manipulation izquierda | `Shift izquierdo` o `T` |
-| Activar manipulation derecha | `Espacio` o `Y` |
-| Mover / desplazar | `W` `A` `S` `D` |
-| Girar (yaw) | `Q` `E` |
+| Manipular mando derecho (mantener) | `Espacio` |
+| Manipular mando izquierdo (mantener) | `Shift izquierdo` |
 | **Gatillo (seleccionar / agarrar)** | **Clic izquierdo** |
 | **Grip (agarrar)** | **`G`** |
-| Botón primario (usado para teletransporte) | `B` |
+| Botón primario (teletransporte) | `B` |
 | Sujetar objeto | Apuntar y mantener **clic izquierdo** |
 | Soltar objeto | Soltar **clic izquierdo** |
-| Teletransportarse | Apuntar con el rayo al piso y **soltar** el gatillo |
-| Activar el panel de control | Apuntar el rayo al panel y **clic izquierdo** |
+| Lanzar objeto | Soltar mientras te mueves (lanzamiento activado) |
+| **Teletransportarse** | Apuntar con el rayo al **Piso** y **soltar** el gatillo |
+| **Activar el panel de control** | Apuntar el rayo al `Panel_Control` y **clic izquierdo** |
 | Alternar modo trasladar / rotar | `R` |
+| Modos del simulador | `1` ejes del joystick · `2` touchpad · `3` posición del dispositivo |
+
+> ⚠️ **No uses la tecla `3`**: activa el modo "posición del dispositivo", que traslada
+> **solo la cabeza** y hace que las manos se queden atrás. Déjalo en el modo por defecto (`1`).
+>
+> Con `WASD` el simulador mueve el HMD **y ambos mandos como un bloque**, así que la cámara y las
+> manos siempre se desplazan juntas.
+
 
 ### Ejecutar en un dispositivo XR
 
@@ -186,6 +194,17 @@ Guion sugerido para el video:
 - `TeleportationArea` + `TeleportationProvider`
 - `XRUIInputModule`
 - `XR Device Simulator` (pruebas sin visor)
+
+### Configuración XR por plataforma
+
+| Plataforma | Proveedor XR | Motivo |
+|---|---|---|
+| **Android (Quest)** | **OpenXR** + 9 perfiles de interacción activos | Plataforma objetivo real de una experiencia XR |
+| **Standalone / PC (Editor)** | **XR Device Simulator** (sin proveedor OpenXR) | Unity documenta que el XR Device Simulator es **incompatible con OpenXR**: el HMD que crea el runtime compite con el HMD simulado y el rig XR acaba leyendo los dispositivos equivocados (síntoma: la cámara se movía y los mandos no). |
+
+> Para probar en PC con un visor real: `Project Settings ▸ XR Plug-in Management` → pestaña de
+> escritorio → activar **OpenXR**, añadir el *Interaction Profile* del visor y **quitar** el
+> `XR Device Simulator` de la escena.
 
 ---
 

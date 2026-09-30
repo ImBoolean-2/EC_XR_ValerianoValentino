@@ -20,15 +20,19 @@ la rúbrica. Las capturas son obligatorias; el video debe durar **como máximo 1
 
 | Acción | Tecla / Ratón |
 |---|---|
+| **Caminar (mueve cámara y manos juntas)** | **`W` `A` `S` `D`** |
 | Girar la cabeza | Clic derecho + mover el ratón |
 | Cambiar de dispositivo (izq./der./HMD) | `Tab` |
-| Manipular controller derecho (mantener) | `Espacio` |
-| Manipular controller izquierdo (mantener) | `Shift izquierdo` |
-| Mover / desplazar | `W` `A` `S` `D` |
-| Girar en el sitio | `Q` `E` |
+| Manipular mando derecho (mantener) | `Espacio` |
+| Manipular mando izquierdo (mantener) | `Shift izquierdo` |
 | **Gatillo (agarrar / pulsar)** | **Clic izquierdo** |
 | **Grip (agarrar objeto)** | **`G`** |
 | Botón primario (teletransporte) | `B` |
+| Alternar modo trasladar / rotar | `R` |
+
+> ⚠️ **No uses la tecla `3`** (modo "posición del dispositivo"): traslada solo la cabeza y las
+> manos se quedan atrás. Deja el modo por defecto (`1`).
+
 
 ---
 

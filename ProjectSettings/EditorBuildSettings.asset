@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/EC_XR_ValerianoValentino.unity
-    guid: 00000000000000000000000000000000
+    guid: 31db31875faaa9a4aa210c93c915f740
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 89d0e041a2b8ba24cb5b93705b1f3d23, type: 2}
