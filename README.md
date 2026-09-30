@@ -181,11 +181,24 @@ grip y el contador del HUD espacial registra la parada.
 
 ## 6. Video demostrativo
 
-**Enlace al video (máximo 1 minuto):**
+**Duración: 28,5 segundos** (dentro del máximo de 1 minuto).
 
-> `[PENDIENTE — insertar aquí el enlace al video]`
+**Enlace al video:**
 
-Guion sugerido para el video:
+- En el repositorio: [`docs/video/EC_XR_ValerianoValentino.mp4`](docs/video/EC_XR_ValerianoValentino.mp4)
+- Enlace directo web: <https://github.com/ImBoolean-2/EC_XR_ValerianoValentino/blob/main/docs/video/EC_XR_ValerianoValentino.mp4>
+
+### Contenido del video
+
+| Momento | Qué muestra |
+|---|---|
+| Inicio | Vista general de la sala de entrenamiento |
+| Desarrollo | Agarre y manipulación de objetos con el mando |
+| Desarrollo | Interacción a distancia: el rayo acciona el `Panel_Control` (luz y color) |
+| Desarrollo | Teletransporte por el escenario |
+| Cierre | Contador de objetos agarrados en la UI espacial |
+
+### Guion (por si se vuelve a grabar)
 
 1. **0:00 – 0:10** — Vista general de la escena y del proyecto abierto en Unity.
 2. **0:10 – 0:25** — Agarrar, mover y lanzar el cubo y la esfera (interacción con objetos).
