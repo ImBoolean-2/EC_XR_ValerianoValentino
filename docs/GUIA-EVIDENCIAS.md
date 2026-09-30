@@ -46,11 +46,13 @@ la rúbrica. Las capturas son obligatorias; el video debe durar **como máximo 1
 
 **Qué debe verse:** la sala completa, con piso, muros, techo, iluminación, la mesa y los objetos 3D.
 
-**Cómo:**
-1. En Play, mirar la sala desde una esquina (girar con clic derecho).
-2. Usar la **Scene view** en modo *Play* y encuadrar la sala, o bien pulsar
-   `Window > General > Screenshot` si se quiere una captura nítida.
-3. Guardar como `docs/screenshots/01-vista-general.png`.
+**Cómo (con el atajo incluido):**
+1. Pulsa **Play**.
+2. Colócate mirando la sala desde una esquina (muévete con `WASD` y gira moviendo el ratón).
+3. Pulsa **`F9`** → se guarda automáticamente como `docs/screenshots/01-vista-general.png`.
+
+> El script `Assets/Scripts/CapturadorCapturas.cs` (solo Editor) hace la captura con el nombre
+> correcto. Necesitas una resolución de Game view razonable (por ejemplo 1920x1080 o 1280x720).
 
 ---
 
@@ -76,13 +78,15 @@ Guarda como `docs/screenshots/02-configuracion-xr.png`.
 **Qué debe verse:** el rayo del mando apuntando al `Panel_Control` con la luz de la sala encendida
 (el panel se pone **verde** y la cápsula cambia de color).
 
-**Cómo:**
+**Cómo (con el atajo incluido):**
 1. En Play, **mira hacia el muro oeste** (a la izquierda) moviendo el ratón hasta ver el
    `Panel_Control`.
 2. Apunta al panel (el rayo del mando derecho sale hacia donde miras).
 3. **Haz clic izquierdo** sobre el panel: la luz de sala se enciende y el panel se pone verde.
-   Mantén el clic para que se quede encendido.
-4. Capturar la pantalla.
+   **Mantén el clic pulsado** para que se quede encendido.
+4. Pulsa **`F10`** → se guarda automáticamente como `docs/screenshots/03-interaccion.png`.
+
+> Alternativa por si prefieres capturar también el mando y el rayo: `Windows + Shift + S`.
 
 Guarda como `docs/screenshots/03-interaccion.png`.
 
