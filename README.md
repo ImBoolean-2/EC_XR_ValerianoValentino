@@ -138,23 +138,44 @@ Sala de entrenamiento (10 x 10 unidades)
 
 ![Vista general del escenario](docs/screenshots/01-vista-general.png)
 
-Vista de la sala de entrenamiento con piso, muros, iluminación, mesa de trabajo y los objetos 3D.
+Vista de la sala de entrenamiento en la **Scene view**: piso, cuatro muros, techo, iluminación
+(direccional + dos puntuales), mesa de trabajo y los objetos 3D. A la derecha, el Inspector del
+`XR Origin (XR Rig)` mostrando los componentes `XROrigin`, `Input Action Manager` y
+`XR Input Modality Manager`.
 
 ### (2) Configuración XR / componentes en el Inspector
 
 ![Configuración XR](docs/screenshots/02-configuracion-xr.png)
 
-Configuración del proyecto XR: **XR Plug-in Management** con el proveedor **OpenXR** activo y el
-componente `XRGrabInteractable` de un objeto manipulable en el Inspector.
+Inspector de `Props ▸ Objeto_Cubo`: **`Rigidbody`** (con `Use Gravity`) y
+**`XR Grab Interactable`**, los dos componentes que hacen que el objeto sea manipulable.
+La configuración de XR Plug-in Management (OpenXR + 9 perfiles de interacción en Android,
+XR Device Simulator en el Editor) se describe en la sección 7.
 
 ### (3) Una interacción funcionando
 
 ![Interacción funcionando](docs/screenshots/03-interaccion.png)
 
-Interacción a distancia: el rayo del mando apunta al `Panel_Control`, que enciende la luz de la
-sala y cambia el color de la cápsula.
+**Play mode.** El rayo del mando derecho apunta al `Panel_Control`, que está **en verde**
+(estado *encendido*): la interacción a distancia ha activado la luz de sala y ha cambiado el
+material del panel. Se ve también la UI del **XR Device Simulator** con el mando derecho
+seleccionado.
 
-> **Nota:** las capturas se encuentran en la carpeta `docs/screenshots/` del repositorio.
+### (4) Estructura de la escena
+
+![Jerarquía de la escena](docs/screenshots/04-jerarquia.png)
+
+Jerarquía completa: `XR Interaction Manager`, `EventSystem`, `XR Origin (XR Rig)`,
+`XR Device Simulator`, `Environment`, `Lighting`, `Props` y `Panel_Control`.
+
+### (5) Agarre de objetos
+
+![Agarre de objetos](docs/screenshots/05-agarre.png)
+
+**Play mode.** El cilindro agarrado y sostenido con el mando; el `XRGrabInteractable` responde al
+grip y el contador del HUD espacial registra la parada.
+
+> **Nota:** todas las capturas están en la carpeta `docs/screenshots/` del repositorio.
 
 ---
 

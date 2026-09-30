@@ -21,7 +21,7 @@ namespace ECXR
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         static void Instalar()
         {
-            var go = new GameObject("[CapturadorCapturas]");
+            var go = new GameObject("[CapturadorCapturas]") { hideFlags = HideFlags.HideInHierarchy };
             DontDestroyOnLoad(go);
             go.AddComponent<CapturadorCapturas>();
         }
