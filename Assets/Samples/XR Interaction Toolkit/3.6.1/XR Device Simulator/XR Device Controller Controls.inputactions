@@ -302,6 +302,17 @@
                 },
                 {
                     "name": "",
+                    "id": "5299b386-31d6-402e-be13-35295aab6267",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4f6dfc4a-38d9-455d-9364-3a188b0e9326",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",

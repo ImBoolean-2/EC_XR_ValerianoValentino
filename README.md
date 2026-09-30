@@ -97,27 +97,25 @@ Sala de entrenamiento (10 x 10 unidades)
 |---|---|
 | **Caminar (mueve cámara y manos juntas)** | **`W` `A` `S` `D`** |
 | Mirar alrededor | **mover el ratón** (sin pulsar nada) |
-| **Manipular mando derecho (MANTENER)** | **`Espacio`** |
-| **Fijar / liberar mando derecho** | **`Y`** (toggle) |
+| **AGARRAR un objeto / accionar el Panel de Control** | **Clic izquierdo** (o **`G`**) |
+| Soltar el objeto | soltar el clic izquierdo |
+| Lanzar el objeto | soltarlo mientras mueves el brazo |
+| **Teletransportarse** | apuntar con el rayo al **Piso** y soltar |
+| Manipular mando derecho (MANTENER) | `Espacio` |
 | Manipular mando izquierdo (MANTENER) | `Shift izquierdo` |
+| Fijar / liberar mando derecho | `Y` (toggle) |
 | Fijar / liberar mando izquierdo | `T` (toggle) |
-| **Gatillo → agarrar objeto / accionar el panel** | **Clic izquierdo** |
-| **Grip (agarrar)** | **`G`** |
-| Botón primario (teletransporte) | `B` |
+| Botón primario | `B` |
 | Cambiar de dispositivo (izq./der./HMD) | `Tab` |
-| Manipular la cabeza (MANTENER) | Clic derecho |
-| Lanzar objeto | Soltar el gatillo mientras mueves el mando |
 
-> ⚠️ **IMPORTANTE — el gatillo solo funciona sobre un mando que estés manipulando.**
-> En el estado inicial el simulador está en modo *FPS* (solo mueve y gira). Para agarrar:
+> ℹ️ **Detalle técnico importante:** en los *Starter Assets* del XR Interaction Toolkit la acción
+> **`Select`** (agarrar) está ligada a `<XRController>/{GripButton}`, **no** al gatillo. El gatillo
+> dispara la acción **`Activate`**. Por eso este proyecto vincula `<Mouse>/leftButton` tanto al
+> `Grip` como a `Manipulate Right`: un clic izquierdo agarra directamente, sin mantener `Espacio`.
 >
-> 1. Mira al objeto moviendo el ratón.
-> 2. **Mantén `Espacio`** (o pulsa **`Y`** para dejarlo fijo) → pasas a controlar el mando derecho.
-> 3. Mueve el ratón para apuntar el mando/rayo al objeto.
-> 4. **Clic izquierdo** → lo agarras.
->
-> Es el comportamiento documentado del XR Device Simulator: `ProcessButtonControlInput` solo se
-> ejecuta sobre los mandos que están siendo manipulados.
+> Si alguna vez parte de un proyecto limpio sin esos bindings, la forma estándar es
+> **mantener `Espacio`** (manipular mando derecho) y **pulsar `G`** (grip) para agarrar.
+
 
 > ⚠️ **No uses la tecla `3`**: activa el modo "posición del dispositivo", que traslada
 > **solo la cabeza** y hace que las manos se queden atrás. Déjalo en el modo por defecto (`1`).

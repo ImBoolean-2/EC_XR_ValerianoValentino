@@ -45,15 +45,35 @@ namespace ECXR
 
             public void LogFormat(LogType logType, UnityEngine.Object context, string format, params object[] args)
             {
-                if (EsElAvisoDeHaptica(format)) return;
+                if (EsElAvisoDeHaptica(format, args)) return;
                 _interno.LogFormat(logType, context, format, args);
             }
 
             public void LogException(Exception exception, UnityEngine.Object context)
                 => _interno.LogException(exception, context);
 
-            static bool EsElAvisoDeHaptica(string format)
-                => !string.IsNullOrEmpty(format) && format.Contains(TextoFiltrado);
+            /// <summary>
+            /// Unity envuelve los mensajes como LogFormat(tipo, contexto, "{0}", mensaje), es decir
+            /// que el texto real llega en <paramref name="args"/> y no en <paramref name="format"/>.
+            /// Hay que revisar los dos sitios.
+            /// </summary>
+            static bool EsElAvisoDeHaptica(string format, object[] args)
+            {
+                if (!string.IsNullOrEmpty(format) && format.Contains(TextoFiltrado))
+                    return true;
+
+                if (args != null)
+                {
+                    for (int i = 0; i < args.Length; i++)
+                    {
+                        var arg = args[i];
+                        if (arg != null && arg.ToString().Contains(TextoFiltrado))
+                            return true;
+                    }
+                }
+
+                return false;
+            }
         }
     }
 }

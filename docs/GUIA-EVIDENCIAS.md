@@ -22,21 +22,22 @@ la rúbrica. Las capturas son obligatorias; el video debe durar **como máximo 1
 |---|---|
 | **Caminar (mueve cámara y manos juntas)** | **`W` `A` `S` `D`** |
 | Mirar alrededor | **mover el ratón** (sin pulsar nada) |
-| **Manipular mando derecho (MANTENER)** | **`Espacio`** |
-| **Fijar / liberar mando derecho** | **`Y`** (toggle) |
+| **AGARRAR un objeto / pulsar el panel** | **Clic izquierdo** (o **`G`**) |
+| Soltar el objeto | soltar el clic izquierdo |
+| Manipular mando derecho (MANTENER) | `Espacio` |
 | Manipular mando izquierdo (MANTENER) | `Shift izquierdo` |
+| Fijar / liberar mando derecho | `Y` (toggle) |
 | Fijar / liberar mando izquierdo | `T` (toggle) |
-| **Gatillo → agarrar / pulsar** | **Clic izquierdo** |
-| **Grip (agarrar objeto)** | **`G`** |
-| Botón primario (teletransporte) | `B` |
-| Manipular la cabeza (MANTENER) | Clic derecho |
+| Botón primario | `B` |
 
-> ⚠️ **El gatillo solo funciona sobre un mando que estés manipulando.** En el estado inicial el
-> simulador está en modo *FPS*. Para agarrar: mira al objeto → **mantén `Espacio`** (o pulsa `Y`)
-> → apunta con el ratón → **clic izquierdo**.
+> ℹ️ El agarre corresponde a la acción **`Select`**, que en los Starter Assets está ligada a
+> **`{GripButton}`** (grip), no al gatillo. El clic izquierdo está vinculado al `Grip` y a
+> `Manipulate Right`, así que **apuntar y hacer clic agarra** directamente. En un proyecto limpio
+> sería: mantener `Espacio` + pulsar `G`.
 
 > ⚠️ **No uses la tecla `3`** (modo "posición del dispositivo"): traslada solo la cabeza y las
 > manos se quedan atrás. Deja el modo por defecto (`1`).
+
 
 
 ---
@@ -76,10 +77,11 @@ Guarda como `docs/screenshots/02-configuracion-xr.png`.
 (el panel se pone **verde** y la cápsula cambia de color).
 
 **Cómo:**
-1. En Play, pulsar `Tab` hasta seleccionar el **controller derecho**.
-2. Mantener `Espacio` para manipularlo y apuntar con el rayo al `Panel_Control`
-   (está en el muro oeste, a la izquierda).
-3. Pulsar **clic izquierdo** para accionarlo: la luz de sala se enciende y el panel se pone verde.
+1. En Play, **mira hacia el muro oeste** (a la izquierda) moviendo el ratón hasta ver el
+   `Panel_Control`.
+2. Apunta al panel (el rayo del mando derecho sale hacia donde miras).
+3. **Haz clic izquierdo** sobre el panel: la luz de sala se enciende y el panel se pone verde.
+   Mantén el clic para que se quede encendido.
 4. Capturar la pantalla.
 
 Guarda como `docs/screenshots/03-interaccion.png`.
