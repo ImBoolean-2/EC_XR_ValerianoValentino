@@ -21,14 +21,19 @@ la rúbrica. Las capturas son obligatorias; el video debe durar **como máximo 1
 | Acción | Tecla / Ratón |
 |---|---|
 | **Caminar (mueve cámara y manos juntas)** | **`W` `A` `S` `D`** |
-| Girar la cabeza | Clic derecho + mover el ratón |
-| Cambiar de dispositivo (izq./der./HMD) | `Tab` |
-| Manipular mando derecho (mantener) | `Espacio` |
-| Manipular mando izquierdo (mantener) | `Shift izquierdo` |
-| **Gatillo (agarrar / pulsar)** | **Clic izquierdo** |
+| Mirar alrededor | **mover el ratón** (sin pulsar nada) |
+| **Manipular mando derecho (MANTENER)** | **`Espacio`** |
+| **Fijar / liberar mando derecho** | **`Y`** (toggle) |
+| Manipular mando izquierdo (MANTENER) | `Shift izquierdo` |
+| Fijar / liberar mando izquierdo | `T` (toggle) |
+| **Gatillo → agarrar / pulsar** | **Clic izquierdo** |
 | **Grip (agarrar objeto)** | **`G`** |
 | Botón primario (teletransporte) | `B` |
-| Alternar modo trasladar / rotar | `R` |
+| Manipular la cabeza (MANTENER) | Clic derecho |
+
+> ⚠️ **El gatillo solo funciona sobre un mando que estés manipulando.** En el estado inicial el
+> simulador está en modo *FPS*. Para agarrar: mira al objeto → **mantén `Espacio`** (o pulsa `Y`)
+> → apunta con el ratón → **clic izquierdo**.
 
 > ⚠️ **No uses la tecla `3`** (modo "posición del dispositivo"): traslada solo la cabeza y las
 > manos se quedan atrás. Deja el modo por defecto (`1`).

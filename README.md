@@ -96,26 +96,32 @@ Sala de entrenamiento (10 x 10 unidades)
 | Acción | Tecla / Ratón |
 |---|---|
 | **Caminar (mueve cámara y manos juntas)** | **`W` `A` `S` `D`** |
-| Girar la cabeza (mirar alrededor) | **Clic derecho** + mover el ratón |
-| Cambiar de dispositivo (izq./der./HMD) | `Tab` |
-| Manipular mando derecho (mantener) | `Espacio` |
-| Manipular mando izquierdo (mantener) | `Shift izquierdo` |
-| **Gatillo (seleccionar / agarrar)** | **Clic izquierdo** |
+| Mirar alrededor | **mover el ratón** (sin pulsar nada) |
+| **Manipular mando derecho (MANTENER)** | **`Espacio`** |
+| **Fijar / liberar mando derecho** | **`Y`** (toggle) |
+| Manipular mando izquierdo (MANTENER) | `Shift izquierdo` |
+| Fijar / liberar mando izquierdo | `T` (toggle) |
+| **Gatillo → agarrar objeto / accionar el panel** | **Clic izquierdo** |
 | **Grip (agarrar)** | **`G`** |
 | Botón primario (teletransporte) | `B` |
-| Sujetar objeto | Apuntar y mantener **clic izquierdo** |
-| Soltar objeto | Soltar **clic izquierdo** |
-| Lanzar objeto | Soltar mientras te mueves (lanzamiento activado) |
-| **Teletransportarse** | Apuntar con el rayo al **Piso** y **soltar** el gatillo |
-| **Activar el panel de control** | Apuntar el rayo al `Panel_Control` y **clic izquierdo** |
-| Alternar modo trasladar / rotar | `R` |
-| Modos del simulador | `1` ejes del joystick · `2` touchpad · `3` posición del dispositivo |
+| Cambiar de dispositivo (izq./der./HMD) | `Tab` |
+| Manipular la cabeza (MANTENER) | Clic derecho |
+| Lanzar objeto | Soltar el gatillo mientras mueves el mando |
+
+> ⚠️ **IMPORTANTE — el gatillo solo funciona sobre un mando que estés manipulando.**
+> En el estado inicial el simulador está en modo *FPS* (solo mueve y gira). Para agarrar:
+>
+> 1. Mira al objeto moviendo el ratón.
+> 2. **Mantén `Espacio`** (o pulsa **`Y`** para dejarlo fijo) → pasas a controlar el mando derecho.
+> 3. Mueve el ratón para apuntar el mando/rayo al objeto.
+> 4. **Clic izquierdo** → lo agarras.
+>
+> Es el comportamiento documentado del XR Device Simulator: `ProcessButtonControlInput` solo se
+> ejecuta sobre los mandos que están siendo manipulados.
 
 > ⚠️ **No uses la tecla `3`**: activa el modo "posición del dispositivo", que traslada
 > **solo la cabeza** y hace que las manos se queden atrás. Déjalo en el modo por defecto (`1`).
->
-> Con `WASD` el simulador mueve el HMD **y ambos mandos como un bloque**, así que la cámara y las
-> manos siempre se desplazan juntas.
+
 
 
 ### Ejecutar en un dispositivo XR
